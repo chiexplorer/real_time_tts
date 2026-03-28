@@ -14,12 +14,10 @@
 
 <script type="ts">
 import { onMounted } from 'vue';
-import { ElIcon } from 'element-plus';
 import { useSidebarStore } from '@/store/sidebar';
 
 export default {
     name: 'Header',
-    components: { ElIcon },
     setup() {        
         const sidebar = useSidebarStore();
         const collapseSidebarChange = () => {

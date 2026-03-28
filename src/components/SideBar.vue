@@ -42,14 +42,12 @@
 
 <script>
 import { computed } from 'vue';
-import { ElMenu, ElSubMenu, ElMenuItem, ElIcon } from 'element-plus';
 import { useRoute } from 'vue-router';
 import { useSidebarStore } from '@/store/sidebar';
 import { usePermissionStore } from '@/store/permissions';
 
 export default {
     name: 'SideBar',
-    components: { ElMenu, ElSubMenu, ElMenuItem, ElIcon },
     setup() {
         const route = useRoute();
         const permissions = usePermissionStore();
